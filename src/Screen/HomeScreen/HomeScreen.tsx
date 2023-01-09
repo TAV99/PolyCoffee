@@ -1,32 +1,19 @@
-import { View, Text, TouchableOpacity,ScrollView } from 'react-native'
-import React from 'react'
+import { View, Text, TouchableOpacity,ScrollView, } from 'react-native'
+import React,{useState} from 'react'
 import styles from './HomeScreenStyle'
+import {LeftMenu} from './../../Components';
 
 const HomeScreen = () => {
   return (
     <View style={styles.background}>
       <View style={styles.container}>
-        {/* LefView */}
-        <View style={styles.lefView}>
-          <TouchableOpacity style={styles.touchLef}>
-            <Text style={styles.textBar}>Coffee</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.touchLef}>
-            <Text style={styles.textBar}>Milk Tea</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.touchLef}>
-            <Text style={styles.textBar}>Tea</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.touchLef}>
-            <Text style={styles.textBar}>Juice</Text>
-          </TouchableOpacity>
-        </View>
+        <LeftMenu/>
         {/* rightView */}
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.rightView}>
 
         </ScrollView>
+        </View>
       </View>
-    </View>
   )
 }
 

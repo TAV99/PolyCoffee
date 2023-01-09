@@ -16,31 +16,11 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         with: '100%',
         height: '85%',
-        backgroundColor: 'red',
         borderTopRightRadius: 30,
-      },
-      lefView:{
-        marginLeft:-32,
-        height:"85%",
-        alignSelf:"flex-start",
-        marginTop: 32,
-        backgroundColor:'blue'
+        backgroundColor:'white'
       },
       rightView:{
-        backgroundColor:'green',
         height:'100%',
       },
-      textBar:{
-        transform: [{rotate: '270 deg'}],
-        fontFamily: fonts.primary.regular,
-        color: "#EC9B63",
-        fontSize:24,
-        height:"30%",
-        width:'100%',
-      },
-      touchLef:{
-        flex:1,
-        justifyContent:'center',
-      }
 })
 export default styles;
